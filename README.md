@@ -1,0 +1,2 @@
+# ScammerBingo
+Scammer Bingo!
