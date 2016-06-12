@@ -1,0 +1,15 @@
+## Changelog
+
+Key:
++ New Feature
+- Removed Feature
+** Changed Feature
+* Bug Fix
+: Note
+
+Version 0.1
+    : Implemented 
+  
+Version 0.2
+    ** Application now starts in the center of the screen
+    ** When player has won, now resets the buttons and the score instead of restarting the program
