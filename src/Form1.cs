@@ -410,7 +410,7 @@ namespace Scammerbingo
         private void button3_Click(object sender, EventArgs e)
         {
             //About
-            MessageBox.Show("Made by BradBrock1.");
+            MessageBox.Show("Made by Brad Cross.");
         }
 
         public void addOne() 
@@ -424,7 +424,21 @@ namespace Scammerbingo
             {
                 if (MessageBox.Show("Congratulations! You win! Play again?", "Winrar", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
                 {
-                    Application.Restart();
+				    //Reset the game
+					button4.Enabled = true;
+					button5.Enabled = true;
+					button6.Enabled = true;
+					button7.Enabled = true;
+					button8.Enabled = true;
+					button9.Enabled = true;
+					button10.Enabled = true;
+					button11.Enabled = true;
+					button12.Enabled = true;
+					button13.Enabled = true;
+					button14.Enabled = true;
+					button16.Enabled = true;
+					button15.Enabled = true;
+					numClicked = 0;
                 }
             }
         }

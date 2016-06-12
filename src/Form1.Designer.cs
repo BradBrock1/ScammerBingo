@@ -280,11 +280,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(602, 253);
+            this.label1.Location = new System.Drawing.Point(605, 253);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 13);
+            this.label1.Size = new System.Drawing.Size(103, 13);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Made by BradBrock1";
+            this.label1.Text = "Made By Brad Cross";
             // 
             // button17
             // 
@@ -298,6 +298,8 @@
             // 
             // Form1
             // 
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(706, 267);
@@ -311,7 +313,6 @@
             this.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.Text = "";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.groupBox1.ResumeLayout(false);
