@@ -15,5 +15,5 @@ Version 0.2
     ** When player has won, now resets the buttons and the score instead of restarting the program
     
 Version 0.3
-    + Added bonus round
+    + Added bonus round (Need to implement three more though)
     ** Changed winning conditions
