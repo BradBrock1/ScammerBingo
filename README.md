@@ -2,7 +2,7 @@
 Welcome to scammer bingo.
 
 ## I'm a paranoid user
-[Virus Total Scan] (https://virustotal.com/en/file/75654cc0f9bb3152c23c99e382ff9ce1cbf7b92df52c8581d0044044b865aba6/analysis/1465293155/)
+[Virus Total Scan] (https://virustotal.com/en/file/a20a0d7ad243c27e965c41c6467e388740be1afd61da9660d88b1195f46b0f3f/analysis/)
 
 You can also browse the source code too.
 
