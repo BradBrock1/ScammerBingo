@@ -13,3 +13,7 @@ Version 0.1
 Version 0.2
     ** Application now starts in the center of the screen
     ** When player has won, now resets the buttons and the score instead of restarting the program
+    
+Version 0.3
+    + Added bonus round
+    ** Changed winning conditions
