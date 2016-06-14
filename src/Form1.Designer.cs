@@ -47,6 +47,11 @@
             this.button7 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button17 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -280,7 +285,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(605, 253);
+            this.label1.Location = new System.Drawing.Point(590, 338);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 13);
             this.label1.TabIndex = 6;
@@ -296,13 +301,75 @@
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(13, 257);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(91, 17);
+            this.checkBox1.TabIndex = 8;
+            this.checkBox1.Text = "Bonus Round";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // button18
+            // 
+            this.button18.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button18.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.Location = new System.Drawing.Point(13, 275);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(160, 60);
+            this.button18.TabIndex = 8;
+            this.button18.Text = "hh h";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // button19
+            // 
+            this.button19.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button19.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.Location = new System.Drawing.Point(184, 275);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(160, 60);
+            this.button19.TabIndex = 9;
+            this.button19.Text = "Writes down prices and what they will do to fix PC in notepad";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // button20
+            // 
+            this.button20.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button20.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.Location = new System.Drawing.Point(350, 275);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(160, 60);
+            this.button20.TabIndex = 10;
+            this.button20.Text = "<Reserved>";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // button21
+            // 
+            this.button21.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button21.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.Location = new System.Drawing.Point(516, 275);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(160, 60);
+            this.button21.TabIndex = 11;
+            this.button21.Text = "<Reserved>";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
             // Form1
             // 
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(706, 267);
+            this.ClientSize = new System.Drawing.Size(691, 356);
+            this.Controls.Add(this.button21);
+            this.Controls.Add(this.button20);
+            this.Controls.Add(this.button19);
+            this.Controls.Add(this.button18);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button7);
@@ -313,6 +380,7 @@
             this.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.groupBox1.ResumeLayout(false);
@@ -342,6 +410,11 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
     }
 }
 

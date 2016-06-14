@@ -422,24 +422,8 @@ namespace Scammerbingo
             }
             if (numClicked == 12)
             {
-                if (MessageBox.Show("Congratulations! You win! Play again?", "Winrar", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
-                {
-				    //Reset the game
-					button4.Enabled = true;
-					button5.Enabled = true;
-					button6.Enabled = true;
-					button7.Enabled = true;
-					button8.Enabled = true;
-					button9.Enabled = true;
-					button10.Enabled = true;
-					button11.Enabled = true;
-					button12.Enabled = true;
-					button13.Enabled = true;
-					button14.Enabled = true;
-					button16.Enabled = true;
-					button15.Enabled = true;
-					numClicked = 0;
-                }
+                MessageBox.Show("You win! But can you beat the bonus round?");
+                checkBox1.Checked = true;
             }
         }
 
@@ -480,7 +464,12 @@ namespace Scammerbingo
             button14.Enabled = true;
             button16.Enabled = true;
             button15.Enabled = true;
+            button18.Enabled = true;
+            button19.Enabled = true;
+            button20.Enabled = true;
+            button21.Enabled = true;
             numClicked = 0;
+            scoreOfBonus = 0;
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -573,7 +562,11 @@ namespace Scammerbingo
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //Bonus round 
+            button18.Visible = false;
+            button19.Visible = false;
+            button20.Visible = false;
+            button21.Visible = false;
         }
 
         private void button1_MouseHover(object sender, EventArgs e)
@@ -588,6 +581,83 @@ namespace Scammerbingo
             System.Diagnostics.Process.Start("http://paypal.me/bradbrock1");
         }
 
+        private void button18_Click(object sender, EventArgs e)
+        {
+            //HTML HELP
+            button18.Enabled = false;
+            addOneBonus();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            //Reset initially
+            button18.Enabled = true;
+
+
+            if (checkBox1.Checked)
+            {
+                button18.Visible = true;
+                button19.Visible = true;
+                button20.Visible = true;
+                button21.Visible = true;
+            }
+            else
+            {
+                button18.Visible = false;
+                button19.Visible = false;
+                button20.Visible = false;
+                button21.Visible = false;
+            }
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            button19.Enabled = false;
+            addOneBonus();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            button20.Enabled = false;
+            addOneBonus();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            button21.Enabled = false;
+            addOneBonus();
+        }
+        int scoreOfBonus = 0;
+        void addOneBonus() //Same as addOne, but for the bonus round.
+        {
+            scoreOfBonus++;
+            if (scoreOfBonus == 4 && numClicked == 12)
+            {
+                if (MessageBox.Show("Congratulations! You beat hard mode! Play again?", "Winrar", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    //Reset the game
+                    button4.Enabled = true;
+                    button5.Enabled = true;
+                    button6.Enabled = true;
+                    button7.Enabled = true;
+                    button8.Enabled = true;
+                    button9.Enabled = true;
+                    button10.Enabled = true;
+                    button11.Enabled = true;
+                    button12.Enabled = true;
+                    button13.Enabled = true;
+                    button14.Enabled = true;
+                    button16.Enabled = true;
+                    button15.Enabled = true;
+                    button18.Enabled = true;
+                    button19.Enabled = true;
+                    button20.Enabled = true;
+                    button21.Enabled = true;
+                    numClicked = 0;
+                    scoreOfBonus = 0;
+                }
+            }
+        }
 
     }
 }
